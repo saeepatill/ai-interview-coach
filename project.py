@@ -4,7 +4,7 @@ import pdfplumber
 import tempfile
 
 # Configure Gemini API Key
-genai.configure(api_key="AIzaSyBebHKyWyXzEKyyGOyz0cioDc7d3EaYZ0Q")  # Replace with your actual Gemini API key
+genai.configure(api_key=st.secrets["apikey"])  # Replace with your actual Gemini API key
 model = genai.GenerativeModel("gemini-2.5-pro")
 
 st.set_page_config(page_title="AI Interview Coach", layout="centered")
